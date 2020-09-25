@@ -40,11 +40,29 @@
   font-family: sans-serif;
   color: white;
 }
-.content {
+.img {
   display: none;
-  padding: 15px;
-  width: 75%;
+  padding: 25px;
+  width: 80%;
   margin: 0 auto;
+}
+
+.img__add {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 25px;
+}
+.img img {
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.25s ease;
+  filter: grayscale(100%);
+  cursor: pointer;
+}
+.img img:hover {
+  filter: none;
+  transform: scale(1.05);
 }
 
 @keyframes move_items {
